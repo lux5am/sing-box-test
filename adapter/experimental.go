@@ -134,6 +134,7 @@ type URLTestGroup interface {
 
 type SelectorGroup interface {
 	OutboundGroup
+	Selected() Outbound
 }
 
 func OutboundTag(detour Outbound) string {
